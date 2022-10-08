@@ -23,8 +23,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       -  run: npm install
-      - name: Build project
-        run: npm run build
+        run: node server.js
 
   deploy:
     name: Deploy
